@@ -3,7 +3,7 @@
 <% @teams.each do |team| %>
   <p id="team-<%= team.id %>">
     <%= team.nickname %>
-    <%= team.avg_age_of_players %>
+    <%= team.average %>
     <%= team.hometown %>
   </p>
 <% end %>
