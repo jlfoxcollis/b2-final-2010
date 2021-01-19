@@ -4,5 +4,4 @@ class Competition < ApplicationRecord
   has_many :players, through: :teams
 
   validates_presence_of :name, :location, :sport
-
 end

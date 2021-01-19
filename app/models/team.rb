@@ -5,6 +5,6 @@ class Team < ApplicationRecord
   validates_presence_of :hometown, :nickname
 
   def self.sort_by_age
-    joins(:players).select('teams.*, SUM(players.age) as average').group(:id).order('average DESC')
+    joins(:players).select('teams.*, AVG(players.age) as average').group(:id).order('average DESC')
   end
 end

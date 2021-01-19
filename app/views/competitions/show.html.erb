@@ -2,15 +2,20 @@
   <%= button_to "Register Team", new_competition_team_path(@competition), params: {competition_id: @competition.id}, method: :get %>
 </nav>
 <section id="competition-info">
-  Name: <%= @competition.name %>
-  Location: <%= @competition.location %>
-  Sport: <%= @competition.sport %>
-  Average Players Age: <%= @competition.avg_age_of_players %>
+  <ol>
+    <li>Name: <%= @competition.name %></li>
+    <li>Location: <%= @competition.location %></li>
+    <li>Sport: <%= @competition.sport %></li>
+    <li>Average Players Age: <%= @competition.avg_age_of_players %></li>
+  </ol>
 </section>
 
+<ol>
+  <h2> Teams Registered</h2>
 <% @competition.teams.each do |team| %>
-  <p id="team-<%= team.id %>">
-    <%= link_to team.nickname %>
+  <li><p id="team-<%= team.id %>">
+    Team: <%= link_to team.nickname %>, HomeTown:
     <%= team.hometown %>
-  </p>
+  </p></li>
 <% end %>
+</ol>

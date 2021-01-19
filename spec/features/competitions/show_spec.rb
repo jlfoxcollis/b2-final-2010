@@ -14,7 +14,7 @@ describe 'competition index page' do
     end
 
 
-    it 'can show all competition names and each name is a link' do
+    it 'can show a competition, the teams, average age of all players and each name is a link' do
       visit competition_path(@comp)
 
       within("#competition-info") do

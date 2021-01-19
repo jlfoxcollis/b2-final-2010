@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Team.destroy_all
 Competition.destroy_all
+Player.destroy_all
+
+@comp = FactoryBot.create(:competition)
 
 @team1 = FactoryBot.create(:team)
 2.times do
@@ -20,3 +23,6 @@ end
 2.times do
   FactoryBot.create(:player, age: 2, team: @team3)
 end
+
+@comp_team1 = CompTeam.create(team: @team1, competition: @comp)
+@comp_team2 = CompTeam.create(team: @team2, competition: @comp)

@@ -21,9 +21,11 @@ describe 'teams index page' do
 
       visit teams_path
 
-      within("#team-#{@team1.id}") do
+      within("#team-name-#{@team1.id}") do
         expect(page).to have_content(@team1.nickname)
-        expect(page).to have_content(@team1.avg_age_of_players)
+      end
+      within("#team-average-#{@team2.id}") do
+        expect(page).to have_content(@team2.avg_age_of_players)
       end
 
       expect(@team2.nickname).to appear_before(@team1.nickname)
