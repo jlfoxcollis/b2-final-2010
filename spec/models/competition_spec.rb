@@ -14,7 +14,17 @@ describe Competition do
   end
 
   describe 'instance methods' do
+    it '#avg_age_of_players' do
+      @comp = create(:competition)
+      @team1 = create(:team)
+      @team2 = create(:team)
+      @comp_team1 = CompTeam.create(team: @team1, competition: @comp)
+      @comp_team2 = CompTeam.create(team: @team2, competition: @comp)
+      create(:player, team: @team1, age: 5)
+      create(:player, team: @team2, age: 5)
+      create(:player, team: @team1, age: 5)
 
+      expect(@comp.avg_age_of_players).to eq(15)
+    end
   end
-
 end

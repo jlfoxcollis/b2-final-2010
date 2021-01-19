@@ -1,0 +1,13 @@
+<section id="competition-info">
+  Name: <%= @competition.name %>
+  Location: <%= @competition.location %>
+  Sport: <%= @competition.sport %>
+  Average Players Age: <%= @competition.avg_age_of_players %>
+</section>
+
+<% @competition.teams.each do |team| %>
+  <p id="team-<%= team.id %>">
+    <%= link_to team.nickname %>
+    <%= team.hometown %>
+  </p>
+<% end %>

@@ -242,9 +242,29 @@
         "lines": [
           1,
           1,
-          6,
-          6,
-          6,
+          7,
+          7,
+          7,
+          null,
+          null
+        ]
+      },
+      "/Users/james/turing/mod2/b2-final-2010/spec/factories/players.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/james/turing/mod2/b2-final-2010/spec/factories/teams.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
           null,
           null
         ]
@@ -263,6 +283,48 @@
           null
         ]
       },
+      "/Users/james/turing/mod2/b2-final-2010/spec/features/competitions/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/james/turing/mod2/b2-final-2010/app/models/competition.rb": {
         "lines": [
           1,
@@ -271,6 +333,10 @@
           1,
           null,
           1,
+          null,
+          null,
+          1,
+          2,
           null,
           null
         ]
@@ -285,6 +351,15 @@
       "/Users/james/turing/mod2/b2-final-2010/app/controllers/competitions_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
           null,
           1,
           1,
@@ -298,8 +373,41 @@
           1,
           null
         ]
+      },
+      "/Users/james/turing/mod2/b2-final-2010/app/models/team.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/james/turing/mod2/b2-final-2010/app/models/comp_team.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/james/turing/mod2/b2-final-2010/app/models/player.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1611075518
+    "timestamp": 1611076347
   }
 }
