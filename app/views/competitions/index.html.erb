@@ -1,0 +1,8 @@
+<h2> Competitions Index </h2>
+
+<% @competitions.each do |comp| %>
+<p id="competition-<%= comp.id %>">
+  <%= link_to comp.name, competition_path(comp) %>
+  <%= comp.location %>
+  <%= comp.sport %></p>
+<% end %>
