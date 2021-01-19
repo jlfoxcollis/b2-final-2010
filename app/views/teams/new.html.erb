@@ -1,0 +1,7 @@
+<%= form_with model: @team, local: true, method: :post, url: competition_teams_path do |f| %>
+  <%= f.label 'nickname' %>
+  <%= f.text_field :nickname %>
+  <%= f.label 'hometown' %>
+  <%= f.text_field :hometown %>
+  <%= f.submit %>
+<% end %>

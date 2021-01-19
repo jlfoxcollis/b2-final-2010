@@ -1,3 +1,6 @@
+<nav class="navbar">
+  <%= button_to "Register Team", new_competition_team_path(@competition), params: {competition_id: @competition.id}, method: :get %>
+</nav>
 <section id="competition-info">
   Name: <%= @competition.name %>
   Location: <%= @competition.location %>
